@@ -1,4 +1,3 @@
-
 export default class Store {
   constructor(state = {}) {
     this.state = state;
@@ -6,13 +5,11 @@ export default class Store {
     this.readyResolved = false;
     this.readyPromise = new Promise(resolve => this.readyResolve = resolve);
 
-    console.log('set listener');
     window.addEventListener('message', (event) => {
       const { data } = event;
       // We only accept messages from ourselves
       if (event.source !== window) return;
 
-      console.log('got message', data);
       if (data.type == 'REPLACE_STATE') {
         this.replaceState(data.state);
 

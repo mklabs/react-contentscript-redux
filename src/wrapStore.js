@@ -10,7 +10,6 @@ export default (store) => {
     }
   }, false);
 
-
   store.subscribe(() => {
     const state = store.getState();
     window.postMessage({ type: 'PATCH_STATE', state }, '*');
