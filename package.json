@@ -1,6 +1,6 @@
 {
   "name": "react-contentscript-redux",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bridge to build redux apps in contentscript with react-chrome-redux",
   "main": "lib/index.js",
   "scripts": {
