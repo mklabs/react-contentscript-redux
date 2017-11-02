@@ -1,0 +1,15 @@
+{
+  "name": "react-contentscript-redux",
+  "version": "1.0.0",
+  "description": "Bridge to build redux apps in contentscript with react-chrome-redux",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "babel src --out-dir lib"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
